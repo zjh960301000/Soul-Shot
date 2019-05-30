@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        canvas{
+            width: 700px;
+            height: 1000px;
+            border: 1px solid black;
+            margin: 50px 150px;
+            position: relative;
+            background-image: url("img/background/a.png");
+            background-position: -350px -50px;
+            background-repeat: no-repeat;
+            transition: all 20s;
+        }
+        img{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<!--准星图片-->
+<img src="img/arrow/arrowSP.png" alt="1">
+<img src="img/arrow/arrowSSR.png" alt="2">
+<img src="img/arrow/arrowSR.png" alt="3">
+<img src="img/arrow/arrowR.png" alt="4">
+<img src="img/arrow/arrowN.png" alt="5">
+<!--enemy图片-->
+<img src="img/enemyImage/beast.png" alt="6">
+<img src="img/enemyImage/eye.png" alt="7">
+<img src="img/enemyImage/female.png" alt="8">
+<img src="img/enemyImage/fire.png" alt="9">
+<img src="img/enemyImage/mirror.png" alt="10">
+<img src="img/enemyImage/moro.png" alt="11">
+<img src="img/enemyImage/novice.png" alt="12">
+<img src="img/enemyImage/pillow.png" alt="13">
+<img src="img/enemyImage/plutuscat.png" alt="14">
+<img src="img/enemyImage/potential.png" alt="15">
+<img src="img/enemyImage/soulsweet.png" alt="16">
+<img src="img/enemyImage/zhen.png" alt="17">
+<!--scoreNum图片-->
+<img src="img/scoreNum/zero.png" alt="18">
+<img src="img/scoreNum/one.png" alt="19">
+<img src="img/scoreNum/two.png" alt="20">
+<img src="img/scoreNum/three.png" alt="21">
+<img src="img/scoreNum/four.png" alt="22">
+<img src="img/scoreNum/five.png" alt="23">
+<img src="img/scoreNum/six.png" alt="24">
+<img src="img/scoreNum/seven.png" alt="25">
+<img src="img/scoreNum/eight.png" alt="26">
+<img src="img/scoreNum/nine.png" alt="27">
+<!--shotNum图片-->
+<img src="img/shotNum/zeroNum.png" alt="28">
+<img src="img/shotNum/oneNum.png" alt="29">
+<img src="img/shotNum/twoNum.png" alt="30">
+<img src="img/shotNum/threeNum.png" alt="31">
+<img src="img/shotNum/fourNum.png" alt="32">
+<img src="img/shotNum/fiveNum.png" alt="33">
+<img src="img/shotNum/sixNum.png" alt="34">
+<img src="img/shotNum/sevenNum.png" alt="35">
+<img src="img/shotNum/eightNum.png" alt="36">
+<img src="img/shotNum/nineNum.png" alt="37">
+<!--bullet图片-->
+<img src="img/fire/fireA.png" alt="38">
+<img src="img/fire/fireB.png" alt="39">
+<img src="img/fire/fireC.png" alt="40">
+<img src="img/fire/fireD.png" alt="41">
+<img src="img/fire/fireE.png" alt="42">
+<img src="img/fire/fireF.png" alt="43">
+<img src="img/fire/fireG.png" alt="44">
+<img src="img/fire/fireH.png" alt="45">
+<img src="img/fire/fireI.png" alt="46">
+<!--蓝票图片-->
+<img src="img/brocadeCarp/brocadeCarp.png" alt="47">
+<img src="img/brocadeCarp/brocadeCarpPoint.png" alt="48">
+<!--时间静止图标-->
+<img src="img/timeStop/timeStop.png" alt="49">
+<!--时间静止图标数字-->
+<img src="img/skillNum/skillNumZero.png" alt="50">
+<img src="img/skillNum/skillNumOne.png" alt="51">
+<img src="img/skillNum/skillNumTwo.png" alt="52">
+<img src="img/skillNum/skillNumThree.png" alt="53">
+<img src="img/skillNum/skillNumFour.png" alt="54">
+<img src="img/skillNum/skillNumFive.png" alt="55">
+<!--白金之星-->
+<img src="img/background/platinumStarsOne.png" alt="56">
+<!--返回图标-->
+<img src="img/back/back.png" alt="57">
+<!--等级提升图片-->
+<img src="img/levelUp/Up.png" alt="58">
+<img src="img/levelUp/endGame.png" alt="59">
+<!--倒计时文字-->
+<img src="img/timeStop/timeStopNum.png" alt="60">
+<!--loading背景图片-->
+<img src="img/loading/loading.png" alt="61">
+<!--loading文字-->
+<img src="img/loading/loadingText.png" alt="62">
+<!--loading山兔-->
+<img src="img/loading/loadingShatu.png" alt="63">
+<!--挑战开始背景图-->
+<img src="img/gameStart/gameStart.png" alt="64">
+<!--挑战开始文字-->
+<img src="img/gameStart/gameStartText.png" alt="65">
+<!--成就图片-->
+<img src="img/achievement/achievementOne.png" alt="66">
+<img src="img/achievement/achievementTwo.png" alt="67">
+<img src="img/achievement/achievementThree.png" alt="68">
+<img src="img/achievement/achievementFour.png" alt="69">
+<img src="img/achievement/achievementFive.png" alt="70">
+<img src="img/achievement/achievementSix.png" alt="71">
+<img src="img/achievement/achievementSeven.png" alt="72">
+<img src="img/achievement/achievementEight.png" alt="73">
+<!--成就分数背景-->
+<img src="img/achievement/aaa.png" alt="74">
+<img src="img/achievement/aab.png" alt="75">
+<img src="img/achievement/aac.png" alt="76">
+<img src="img/achievement/aad.png" alt="77">
+<!--游戏结束背景按钮-->
+<img src="img/endGame/alert.png" alt="78">
+<img src="img/endGame/share.png" alt="79">
+<!--开始新游戏-->
+<img src="img/endGame/newText.png" alt="80">
+<!--分享-->
+<img src="img/endGame/share.png" alt="81">
+<!--Loading界面游戏名-->
+<img src="img/loading/gameText.png" alt="82">
+<!--结束界面纪录图片-->
+<img src="img/endGame/refreshRecord.png" alt="83">
+<img src="img/endGame/bestRecord.png" alt="84">
+
+
+
+
+<canvas width="700" height="1000" id = "cvs"></canvas>
+</body>
+<script src="js/shot.js"></script>
+</html>
